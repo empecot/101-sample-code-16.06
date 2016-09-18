@@ -1,0 +1,361 @@
+/***** BASE STYLES--MOBILE FIRST--MIN WIDTH 400PX *****/
+
+body {
+		font-family: 'Athelas', sans-serif;	
+	}
+#about {
+    height: 715px;
+}	
+#work {
+    height: 625px;
+}
+#contact {
+	height: 500px;
+}
+
+/***** GRID *****/
+.full-width {
+    width: 100%;
+}
+.half-width {
+	width: 50%;
+	float: left;
+}
+.third-width {
+	width: 33.3%;
+	float: left;
+}
+
+/***** HEADER *****/
+header {
+    background: url('../img/mobile-coverpic.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 469px;
+    
+}
+		header h1 { 
+		font-family: 'Palatino', sans-serif;
+		font-size: 36px;
+	    color: #e3cb68;
+	    padding-left: .4em;
+		}
+		header h2 {
+		color: #fefbf7;
+		text-align: right;
+		font-family: 'Palatino', sans-serif;
+		font-size: 28px;
+		float: right;
+		width: 13em;
+		padding-right: 1em;
+		margin-top: 6px;
+		}
+			header h2 span {
+			    color: #f55649;
+			}
+		.alt-tagline {
+			display: none;
+		}
+
+nav {
+    float: right; 
+    padding: 5px 23px;
+}
+		nav ul li{
+		    display: inline-block;
+		}
+		nav ul li a {
+		    text-decoration: none;
+		    font-size: 18px;
+		    color: #fefbf7;
+		    padding-left: 80px; 
+		}
+/***** ABOUT *****/
+
+		#about h2 {
+		    font-family: 'Lora', serif;
+		    font-weight: bold;
+		    font-size: 36px;
+		    color: #2b2b2b;
+		    padding-left: 13px;
+		    margin-top: 20px;
+		}
+			#about p {
+			font-size: 18px;
+			color: #7f7f7f;
+			line-height: 32px;
+			padding-right: 12px;
+			padding-left: 13px;
+			margin-top: -20px;
+		}
+		#alt-about {
+			display: none;
+		}
+/***** WORK *****/
+
+.third-width {
+	width: 0px;
+}
+
+#work p {
+	display: none;
+}
+#html-icon {
+	margin-top: -12px;
+}
+#pencil-icon {
+	margin-top: 6px;
+}
+#work {
+	background-color: #e3cb68;
+	text-align: center;
+	padding-top: 60px;
+}
+		#work h3 {
+		    font-size: 24px;
+		    width: 175px;
+		    margin: 0 auto;
+		    color: #339999;
+		    margin-bottom: 40px;
+		}
+		
+		#work h4 {
+		    font-size: 24px;
+		    color: #339999;
+		    margin-bottom: 50px;
+		    text-decoration: underline;
+		    padding: 20px 0 40px 0;
+		}
+
+
+/***** CONTACT *****/
+#contact {
+	background-color: #dedede;
+	background-image: url('../img/contact-image-mobile.jpg');
+	background-repeat: no-repeat;
+	width: cover;
+}
+ #contact .half-width {
+ 	margin-left: 11em;
+ }
+		#contact h2, #email-header, #contact ul {
+		    color: #339999;
+		    width: 6em;
+		    height: auto;
+		}
+		#contact-info {
+			margin-top: 1.9em;
+		}
+		#envelope {
+		    width: 58px;
+		}
+		#contact h2 {
+		    font-family: 'Palatino', sans-serif;
+		    font-size: 32px;
+		    margin-bottom: -9px;  
+		}
+		#contact h2 span {
+			color: #f55649;
+			padding-left: 2px;
+		}
+		#email-address a {
+			text-decoration: none;
+			color: #339999;
+			font-size: 20px;
+		}
+		#contact h3 {
+			display: none;
+		}
+
+/*-------TABLET-------*/
+
+@media (min-width: 768px) {
+
+		/***** HEADER *****/
+		header {
+		background: url('../img/coverpic.jpg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		height: 600px
+	}
+		#about {
+			height: 475px;
+		}
+		header h1 {
+			font-size: 40px;
+		}
+		header h2 {
+			display: none;
+		}
+		.alt-tagline {
+			display: block;
+			font-size: 44px;
+			width: 20em;
+			margin-right: 1.5em;
+			margin-top: 20px;
+		}
+		.name-break {
+			display: none;
+		}
+		nav {
+		  	padding: 21px 0px;
+    		width: 30em;
+		}
+		nav ul li a {
+		    font-size: 24px;
+		}
+
+		/***** ABOUT *****/
+		#about p {
+			font-size: 24px;
+		}
+
+		/***** WORK *****/
+		.third-width {
+			width: 33.3%;
+		}
+		#html-icon {
+		margin-top: -12px;
+		}
+		#pencil-icon {
+			margin-top: 2px;
+		}
+		#work {
+			background-color: #e3cb68;
+			text-align: center;
+		    height: 418px;
+		    padding-top: 39px;
+		}
+		#work img {
+		    padding-bottom: 30px;
+		}
+		#work h3 {
+		    font-size: 24px;
+		    width: 175px;
+		    margin: 0 auto;
+		    color: #339999;
+		}
+		#work p {
+			display: block;
+			font-size: 19px;
+		    line-height: 30px;
+		    color: #2b2b2b;
+		    padding: 0 35px;
+		}
+		#work h4 {
+			display: none;
+		}
+
+		/***** CONTACT *****/
+		#contact {
+			background-image: url('../img/contact-image.jpg');
+			background-size: cover;
+		}
+		#contact h2, #email-header, #contact ul {
+			width: 9em;
+		}
+		#contact h2 {
+			font-size: 42px;
+		}
+		#contact h3 {
+			display: block;
+			font-size: 24px;
+			width: 15em;
+			margin-top: 15px;
+		}
+		#contact .half-width {
+    		margin-left: 27em;
+    	}
+    	#email-address {
+    		display: inline;
+    	}
+    	#contact-info {
+    		display: inline-block;
+    		margin-top: -7px;
+    	}
+}
+
+/*-------DESKTOP-------*/
+
+@media (min-width: 940px) {
+
+		/***** HEADER *****/
+	
+		header {
+			height: 1240px;
+		}
+		header h1 {
+			text-transform: uppercase;
+		}
+		.alt-tagline {
+			font-size: 80px;
+    		line-height: 75px;
+    		padding-top: 52px;
+    		margin-right: 17px;
+		}
+		nav {
+			width: 35em;
+		}
+		nav ul li a {
+			font-size: 30px;
+		}
+
+		/***** ABOUT *****/
+		#about {
+			display: none;
+		}
+		#alt-about {
+			display: block;
+			height: 425px;
+		}
+		#alt-about .full-width {
+    		padding: 32px 0;
+		}
+		#alt-about .half-width {
+			width: 48%;
+			margin-left: 28px;
+		}
+		#alt-about h2 {
+		    font-family: 'Lora', serif;
+		    font-weight: bold;
+		    font-size: 36px;
+		    color: #2b2b2b;
+		    margin-top: 8px;
+    		margin-bottom: -2px;
+    		margin-left: 28px;
+		}
+		#alt-about p {
+		    font-size: 21px;
+		    color: #7f7f7f;
+		    line-height: 42px;
+		    padding-right: 50px;
+		}
+
+		/***** WORK *****/
+		#work {
+			height: 350px;
+			padding-top: 50px;
+		}
+		#work p {
+			width: 306px;
+    		padding-left: 77px;
+		}
+
+		/***** CONTACT *****/
+		#contact {
+			height: 800px;
+		}
+		#contact h2 {
+			font-size: 58px;
+		}
+		#contact h3 {
+			font-size: 34px;
+		}
+		#contact .half-width {
+			float: right;
+			margin-right: -10em;
+		}
+		#email-address a {
+			font-size: 32px;
+		}
+}
